@@ -1,0 +1,4 @@
+[mysqld]
+default_time_zone = '+08:00'
+max_allowed_packet = 50M
+sql_mode = NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
