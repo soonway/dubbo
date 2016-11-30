@@ -1,15 +1,17 @@
 #
-# MAINTAINER        Songwen Wu <wusongwen@hidoms.com>
+# MAINTAINER        Songwen Wu <wusongwen@126.com>
 # DOCKER-VERSION    1.12.1
+# jre version   7u51
+# Dockerizing jre: Dockerfile for building soonway/jre:7u51 images
 #
-# Dockerizing jre: Dockerfile for building hidoms/jre:7u51 images
-#
+
 FROM centos:6.6
-MAINTAINER  Songwen Wu <wusongwen@hidoms.com>
+MAINTAINER  Songwen Wu <wusongwen@126.com>
 
 ENV JRE_HOME /opt/jre
 ENV PATH /opt/jre/bin:$PATH
 
+#指定时区为东八区
 ENV TZ "Asia/Shanghai"
 
 RUN mkdir -p /opt/
