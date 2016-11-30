@@ -40,4 +40,4 @@ docker run --name merchant --network=zoo -d -v /project/mc:/opt/webapp soonway/t
 docker run --name api --network=zoo -d -v /project/app:/opt/webapp soonway/tomcat:jre7u51<br>
 
 #mysql<br>
-docker run --name mysql --network=zoo -e TZ="Asia/Shanghai" -p 3306:3306 -d -v /project/mysql/mysql.cnf:/etc/mysql/conf.d/mysql.cnf:ro -v /project/mysql:/var/lib/mysql mysql:5.6.33<br>
+docker run --name mysql --network=zoo -p 3306:3306 -d -v /project/mysql/mysql.cnf:/etc/mysql/conf.d/mysql.cnf:ro -v /project/mysql:/var/lib/mysql mysql:5.6.33<br>
