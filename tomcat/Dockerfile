@@ -1,10 +1,10 @@
-# MAINTAINER        Songwen Wu  <wusongwen@hidoms.com>
+# MAINTAINER        Songwen Wu  <wusongwen@126.com>
 # DOCKER-VERSION    1.12.1
 # tomcat version:   7.0.54
-# Dockerizing tomcat: Dockerfile for building tomcat images
+# Dockerizing tomcat: Dockerfile for building soonway/tomcat:jre7u51 images
 #
-FROM  hidoms/jre:1.7.0_51
-MAINTAINER  Songwen Wu  <wusongwen@hidoms.com>
+FROM  soonway/jre:7u51
+MAINTAINER  Songwen Wu  <wusongwen@126.com>
 
 ENV  TOMCAT_VERSION 7.0.54
 
@@ -17,8 +17,8 @@ ENV PATH  $PATH:$CATALINA_HOME/bin
 
 COPY server.xml $CATALINA_HOME/conf/server.xml
 
-RUN mkdir -p /mnt/webapp && \
-    chmod -R 777 /mnt/
+RUN mkdir -p /opt/webapp && \
+    chmod -R 777 /opt/
 
 EXPOSE 8080
 
