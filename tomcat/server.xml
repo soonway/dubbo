@@ -30,7 +30,7 @@
                resourceName="UserDatabase"/>
       </Realm>
 
-      <Host name="localhost"  appBase="/mnt/webapp"
+      <Host name="localhost"  appBase="/opt/webapp"
             unpackWARs="true" autoDeploy="true">
       </Host>
     </Engine>
