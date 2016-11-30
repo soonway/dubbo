@@ -2,7 +2,7 @@
 # MAINTAINER        Songwen Wu  <wusongwen@126.com>
 # DOCKER-VERSION    1.12.1
 #
-# Dockerizing nginx: Dockerfile for building nginx images
+# Dockerizing nginx: Dockerfile for building wusongwen/nginx images
 #
 FROM  nginx:latest
 MAINTAINER  Songwen Wu  <wusongwen@126.com>
