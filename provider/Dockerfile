@@ -1,9 +1,9 @@
 # MAINTAINER        Songwen Wu  <wusongwen@126.com>
 # DOCKER-VERSION    1.12.1
 # provider version: jre7u51
-# Dockerizing provider: Dockerfile for building wusongwen/provider:jre7u51 images
+# Dockerizing provider: Dockerfile for building soonway/provider:jre7u51 images
 
-FROM wusongwen/jre:7u51
+FROM soonway/jre:7u51
 MAINTAINER   Songwen Wu  <wusongwen@126.com>
 
 RUN mkdir -p /project
