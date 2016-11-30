@@ -2,7 +2,7 @@
 # MAINTAINER        Songwen Wu <wusongwen@hidoms.com>
 # DOCKER-VERSION    1.12.1
 #
-# Dockerizing jdk: Dockerfile for building jdk7 images
+# Dockerizing jre: Dockerfile for building hidoms/jre:7u51 images
 #
 FROM centos:6.6
 MAINTAINER  Songwen Wu <wusongwen@hidoms.com>
