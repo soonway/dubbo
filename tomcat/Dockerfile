@@ -17,8 +17,8 @@ ENV PATH  $PATH:$CATALINA_HOME/bin
 
 COPY server.xml $CATALINA_HOME/conf/server.xml
 
-RUN mkdir -p /opt/webapp && \
-    chmod -R 777 /opt/
+RUN mkdir -p /mnt/webapp && \
+    chmod -R 777 /mnt/
 
 EXPOSE 8080
 
